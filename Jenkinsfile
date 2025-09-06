@@ -14,6 +14,7 @@ pipeline {
                 sh 'mvn clean package -Dmaven.test.skip=true'
                 echo "----------- build completed ------------"
             }
+        }
         stage("test stage"){
             steps{
                 echo "----------- unit test started ----------"
@@ -21,7 +22,6 @@ pipeline {
                 echo "----------- unit test Completed ----------"
             }
         }
-    }
 
         stage('SonarQube analysis') {
             environment {
