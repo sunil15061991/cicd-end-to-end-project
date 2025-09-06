@@ -14,7 +14,7 @@ pipeline {
                 sh 'mvn clean package -Dmaven.test.skip=true'
                 echo "----------- build completed ------------"
             }
-         stage("test stage"){
+        stage("test stage"){
             steps{
                 echo "----------- unit test started ----------"
                 sh 'mvn surefire-report:report'
