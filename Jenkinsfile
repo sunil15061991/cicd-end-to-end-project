@@ -21,6 +21,7 @@ pipeline {
                 echo "----------- unit test Completed ----------"
             }
         }
+    }
 
         stage('SonarQube analysis') {
             environment {
@@ -46,5 +47,4 @@ pipeline {
                 }
             }
         }
-    }
-}
+    }    
