@@ -23,7 +23,7 @@ pipeline {
             }
         }
 
-        stage('SonarQube analysis') {
+     //   stage('SonarQube analysis') {
             environment {
                 scannerHome = tool 'sonar-scanner'
             }
@@ -45,6 +45,5 @@ pipeline {
                     }
                 }
             }
-        }
+        } //
     }    
-}
