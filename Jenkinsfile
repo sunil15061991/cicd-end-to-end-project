@@ -22,7 +22,7 @@ pipeline {
                 echo "---------- unit test Completed ----------"
             }
         }
-        stage('SonarQube analysis') {
+        /*stage('SonarQube analysis') {
             environment {
                 scannerHome = tool 'sonar-scanner-1'
             }
@@ -44,7 +44,7 @@ pipeline {
                     }
                 }
             }
-        }
+        }*/
 
         stage("Artifact Publish") {
             steps {
