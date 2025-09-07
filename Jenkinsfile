@@ -98,7 +98,7 @@ pipeline {
                 script {
                     echo '<--------------- Helm Deploy Started --------------->'
                     sh 'helm install meportal /home/ubuntu/meportal-1.0.1.tgz'
-                    echo '<--------------- Helm deploy Ends --------------->'
+                    echo '<---------------- Helm deploy Ends --------------->'
                 }
             }
         }
